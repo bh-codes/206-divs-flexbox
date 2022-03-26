@@ -97,8 +97,10 @@ textarea {
 
 
 html {
-  background-color: #f0f8ff;
+  background-color: #000;
+  color: #f0f8ff;
   height: 100%;
+  width: 100%;
 }
 
 body {
@@ -108,34 +110,71 @@ body {
   height: 100%;
 }
 
-.wrapper {
-  font-weight: 700;
+header,
+footer,
+main {
+  height: 100%;
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-.div-1, .div-2, .div-3 {
-    color: #fff;
+header {
+  border-bottom: 5px double #f0f8ff;
+  font-family: 'Roboto Slab', serif;
+  font-size: 4em;
+  font-weight: bold;
+  line-height: 2em;
+  margin-bottom: 0.3em;
+}
+
+main {
+  border-bottom: 5px double #f0f8ff;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  padding-bottom: 1.3em;
+}
+
+.flex-container {
+  display: flex;
+  font-weight: 700;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+#flex-items {
+  color: #f0f8ff;
   line-height: 1.5em;
   font-size: 1em;
-  background-color: #556b2f;
-  border: 5px double #2f4f4f;
-  border-radius: 15px;
   height: 300px;
   display: flex;
   padding: 0 1em 0 1em;
-  width: 27%;
+  width: 30%;
   justify-content: center;
   align-items: center;
+}
 
+.div-2 {
+  border-left: 2px dotted #f0f8ff;
+  border-right: 2px dotted #f0f8ff;
 }
 
 .div-1 span, .div-2 span, .div-3 span {
   font-size: 2em;
   line-height: 1.2em;
-
 }
 
+footer {
+  border-top: 5px double #f0f8ff;
+  padding: 1.5em;
+}
+
+footer a {
+  color: #f0f8ff;
+  text-decoration: none;
+}
 
 /* ==========================================================================
    Helper classes
